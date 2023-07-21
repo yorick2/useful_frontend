@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+        :root {
+          --white: #ffffff;
+          --grey-light: #d9d9d9;
+          --grey-dark: #292d33;
+        }
+        .page-wrapper {
+                max-width: 48rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background: var(--grey-light);
+        }
+</style>
+<div class="page-wrapper">
+
+        <section>     
+                <style type="text/css">
+                        .octagon {
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 10cqw;
+                                height: 10cqw;
+                                color: var(--white);
+                                background: var(--grey-dark);
+                                -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                                clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+                        }
+                </style>
+                <span class="octagon">my text:</span>
+        </section>
+
+        <section>
+                <style type="text/css">
+                        .container {
+                                background-color: var(--grey-dark);
+                                color: var(--white);
+                                width: -moz-fit-content;
+                                width: fit-content;
+                                filter: drop-shadow(1px 1px 0px #000000);
+                        }
+                        .container::before {
+                                content: "-";
+                                color: var(--grey-dark);
+                                background-color: var(--grey-dark);
+                                position: absolute;
+                                top: 0;
+                                left: -20px;
+                                width: 20px;
+                                height: 100%;
+                                -webkit-clip-path: polygon(100% 0, 70% 0, 0 30%, 0 70%, 70% 100%, 100% 100%);
+                                clip-path: polygon(100% 0, 70% 0, 0 30%, 0 70%, 70% 100%, 100% 100%);
+                        }
+                        .container::after {
+                                content: "-";
+                                color: var(--grey-dark);
+                                background-color: var(--grey-dark);
+                                position: absolute;
+                                top: 0;
+                                right: -20px;
+                                width: 20px;
+                                height: 100%;
+                                -webkit-clip-path: polygon(0 0, 30% 0, 100% 30%, 100% 70%, 30% 100%, 0 100%);
+                                clip-path: polygon(0 0, 30% 0, 100% 30%, 100% 70%, 30% 100%, 0 100%);
+                        }
+                        h1{
+                                padding-top: 2px;
+                                padding-left: 5px;
+                                color: var(--white);
+                                background: var(--grey-dark);
+                        }
+                </style>
+                <div class="container">
+                        <h1>My long title</h1>
+                </div>
+        </section>
+
+        <section>
+                <style type="text/css">
+                        .tall-octagon:before {
+                            display: block;
+                            width: 100%;
+                            height: 40px;
+                            content: "-";
+                            background-color: var(--grey-dark);
+                            clip-path: polygon(30% 0%, 70% 0%, 100% 70%, 100% 100%, 0 100%, 0% 70%);
+                        }
+                        .tall-octagon:after {
+                            display: block;
+                            width: 100%;
+                            height: 40px;
+                            content: "-";
+                            color: $colour-white;
+                            background-color: var(--grey-dark);
+                            clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 100%, 30% 100%, 0% 30%);
+                        }
+                        .tall-octagon-content {
+                            color: var(--white);
+                            background-color: var(--grey-dark);
+                            text-align: center;
+                            padding: 1px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                </style>
+                <div class="tall-octagon">
+                        <div class="tall-octagon-content">
+                                <p>some content</p>
+                                <p>some content</p>
+                                <p>some content</p>
+                                <p>some content</p>
+                        </div>
+                </div>
+        </section>
+        
+</div>
+</body>
+</html> 

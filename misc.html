@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+        :root {
+          --white: #ffffff;
+          --grey-light: #d9d9d9;
+          --grey-dark: #292d33;
+          --green-med: #7f9f78;
+        }
+        .page-wrapper {
+                min-height:500px;
+                max-width: 48rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background: var(--grey-light);
+}
+</style>
+<div class="page-wrapper">
+
+        <section>     
+                <style type="text/css">
+                        .drop-shadow-light{
+                            filter: drop-shadow(1px 1px 2px #ffffff);
+                        }
+                        .drop-shadow-dark{
+                            filter: drop-shadow(1px 1px 2px #000000);
+                        }
+                        .content{
+                                background: var(--green-med);
+                                height: 100px;
+                                width: 100px;
+                                margin: 20px;
+                        }
+                </style>
+                <div class="drop-shadow-light">
+                        <div class="content">drop-shadow-light</div>
+                </div>
+                <div class="drop-shadow-dark">
+                        <div class="content">drop-shadow-dark</div>
+                </div>
+        </section>
+
+
+        <section>
+                <style type="text/css">
+                        .rotate-on-hover-clockwise {
+                                width: fit-content;
+                                -ms-transform: rotate(2deg);
+                                transform: rotate(2deg);
+                        }
+                        .rotate-on-hover-anticlockwise {
+                                width: fit-content;
+                                -ms-transform: rotate(-2deg);
+                                transform: rotate(-2deg);
+                        }
+                </style>
+                <div class="rotate-on-hover-clockwise">
+                        <div class="content">rotate clockwise</div>
+                </div>
+                <div class="rotate-on-hover-anticlockwise">
+                        <div class="content">rotate anti-clockwise</div>
+                </div>
+        </section>
+
+        <section>
+                <style type="text/css">
+                        .centre-vertically-container{
+                                margin: 20px;
+                                height: 100px;
+                                width: 100px;
+                                display: flex;
+                                background: var(--green-med);
+                        }
+                        .centre-vertically{
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                        }
+                </style>
+                <div class="centre-vertically-container">
+                        <div class="centre-vertically">vertically centred</div>
+                </div>
+        </section>
+
+        <section>     
+                <style type="text/css">
+                        .container{
+                                width:200px;
+                                height: 300px;
+                                box-shadow: 5px 10px 10px;
+                        }
+                        .box-ratio1-1 {
+                            height: 0;
+                            padding-top: 100%; /* 1:1 Aspect Ratio */
+                            position: relative; /* If you want text inside of it */
+                            width: 100%;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                            background: var(--green-med);
+                        }
+                        .box-ratio1-1  .centre-in-container-box {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                        }
+                </style>
+                <div class="container">
+                        <div class="box-ratio1-1">
+                              <div class="centre-in-container-box">
+                                      <strong>1x1 ratio green box</strong>
+                                      note: its height taken from the width of its container 
+                              </div>
+                        </div>
+                </div>
+        </section>
+</div>
+</body>
+</html> 

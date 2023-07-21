@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+        :root {
+          --white: #ffffff;
+          --grey-light: #d9d9d9;
+          --grey-dark: #292d33;
+        }
+        .page-wrapper {
+                min-height:500px;
+                max-width: 48rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background: var(--grey-light);
+}
+</style>
+<div class="page-wrapper">
+
+        <section>     
+                <style type="text/css">
+                        a{
+                                text-decoration: none;
+                        }
+                        .hexagon{
+                            position:relative;
+                            z-index: 1;
+                            color: white;
+                        }
+                        .hexagon:after {
+                            content: "\2B22";
+                            color: var(--grey-dark);
+                            font-size:110px;
+                            margin: 0;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(10deg);
+                            z-index: -1;
+                        }
+                        .hexagon-rotate-on-hover:hover:after {
+                            -ms-transform: translate(-50%, -50%) rotate(20deg);
+                            transform: translate(-50%, -50%) rotate(20deg);
+                            display: inline-block;
+                        }
+                        .link{
+                            cursor: pointer;
+                            padding: 2px;
+                            top: 30px;
+                        }
+                        .align-middle {
+                                vertical-align: middle;
+                        }
+                </style>
+                <div class="container">
+                        <a href="#" class="link
+                        hexagon
+                        hexagon-rotate-on-hover
+                        my-eased-transition
+                        my-drop-shadow-dark">
+                                <span class="align-middle">
+                                        text
+                                </span>
+                        </a>
+                </div>
+        </section>
+
+</div>
+</body>
+</html> 
